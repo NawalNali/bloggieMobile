@@ -32,11 +32,13 @@ class Homepage extends GetView<HomeController> {
           ]),
       backgroundColor: context.theme.backgroundColor,
       body: Container(
-        child: Column(
-          children: [
-            Post(),
-            Post(),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Post(),
+              Post(),
+            ],
+          ),
         ),
       ),
     );

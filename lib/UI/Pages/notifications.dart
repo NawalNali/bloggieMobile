@@ -1,4 +1,5 @@
 import 'package:bloggie/Controllers/notification_controller.dart';
+import 'package:bloggie/UI/Size_config.dart';
 import 'package:bloggie/UI/Themes.dart';
 import 'package:bloggie/UI/Widgets/notification.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +10,7 @@ class Notifications extends GetView<NotificationsController> {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -20,10 +22,13 @@ class Notifications extends GetView<NotificationsController> {
       ),
       backgroundColor: context.theme.backgroundColor,
       body: Container(
-        child: Column(
-          children: [
-            NotificationW(),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              NotificationW(),
+              NotificationW(),
+            ],
+          ),
         ),
       ),
     );
