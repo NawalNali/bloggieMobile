@@ -1,5 +1,6 @@
 import 'package:bloggie/Controllers/home_controller.dart';
 import 'package:bloggie/Controllers/notification_controller.dart';
+import 'package:bloggie/Controllers/profile_controller.dart';
 import 'package:bloggie/UI/Pages/homepage.dart';
 import 'package:bloggie/UI/Pages/notifications.dart';
 import 'package:bloggie/UI/Pages/profile.dart';
@@ -13,6 +14,7 @@ class DashboardBinding extends Bindings {
     Get.lazyPut<DashboardController>(() => DashboardController());
     Get.lazyPut<HomeController>(() => HomeController());
     Get.lazyPut<NotificationsController>(() => NotificationsController());
+    Get.lazyPut<ProfileController>(() => ProfileController());
   }
 }
 

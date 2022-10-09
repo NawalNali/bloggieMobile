@@ -71,7 +71,16 @@ class Themes {
         textStyle: TextStyle(
       fontSize: 16,
       fontWeight: FontWeight.w600,
-      color: Colors.white,
+      color: Get.isDarkMode ? Colors.white : Colors.black,
+    ));
+  }
+
+  static TextStyle get greyTitle {
+    return GoogleFonts.lato(
+        textStyle: TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.normal,
+      color: Colors.grey,
     ));
   }
 }

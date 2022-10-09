@@ -1,8 +1,6 @@
 import 'package:bloggie/Controllers/theme_controller.dart';
 import 'package:bloggie/Models/app_pages.dart';
 import 'package:bloggie/Models/app_routes.dart';
-import 'package:bloggie/UI/Pages/dashboard.dart';
-import 'package:bloggie/UI/Pages/homepage.dart';
 import 'package:bloggie/UI/Themes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

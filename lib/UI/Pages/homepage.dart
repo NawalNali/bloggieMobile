@@ -41,6 +41,29 @@ class Homepage extends GetView<HomeController> {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Get.bottomSheet(Container(
+            color: context.theme.primaryColor,
+            child: Column(
+              children: [
+                TextField(
+                  maxLines: 8,
+                  keyboardType: TextInputType.multiline,
+                  decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                          borderSide: BorderSide(
+                        color: Colors.red,
+                        width: 5.0,
+                      )),
+                      hintText: 'What\'s your thoughts ?'),
+                )
+              ],
+            ),
+          ));
+        },
+        child: Icon(Icons.edit_rounded),
+      ),
     );
   }
 }
